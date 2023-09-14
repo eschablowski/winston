@@ -1,4 +1,4 @@
-name: CI Checks
+name: CI Tests
 
 on:
   pull_request:
@@ -37,7 +37,7 @@ jobs:
         run: npm run lint
       - name: Integration Tests
         run: npm run test:integration
-      - name: Test Coverage
+      - name: Test
         run: npm run test:coverage
       - name: TypeScript Test
         run: npx --package typescript tsc --project test
